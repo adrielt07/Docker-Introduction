@@ -1,8 +1,8 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 echo "waiting for postgres"
 
-while ! nc -z users_db 5432; do
+while ! nc -z users-db 5432; do
     sleep 0.1
 done
 
