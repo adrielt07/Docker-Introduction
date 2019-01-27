@@ -8,3 +8,7 @@ https://docs.docker.com/machine/install-machine/
 base=https://github.com/docker/machine/releases/download/v0.16.0 &&
 curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine &&
 sudo install /tmp/docker-machine /usr/local/bin/docker-machine
+
+### Variables
+export FLASK_APP=project/__init__/py
+export FLASK_ENV=development
