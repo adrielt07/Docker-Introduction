@@ -16,9 +16,10 @@ def recreatedb():
 def hello():
     print("Hello world")
 
+@cli.command()
 def test():
     '''Runs tests without code coverage'''
-    tests = unittest.TestLoader().discover('project/tests', pattern='test.py')
+    tests = unittest.TestLoader().discover('project/test', pattern='test.py')
     result = unittest.TextTestRunner(verbosity=2).run(tests)
     if result.wasSuccessful():
         return 0
