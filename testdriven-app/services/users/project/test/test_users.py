@@ -1,7 +1,7 @@
 # services/users/project/test/test_users.py
 
 import json
-import uniittest
+import unittest
 
 from project.test.base import BaseTestCase
 
