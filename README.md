@@ -1,8 +1,8 @@
 # Docker-Introduction
 
-I used ec2 instance from AWS
+I used ec2 instance from AWS.
 
-To Install Docker-image in Linux:
+### Docker-image Installation
 https://docs.docker.com/machine/install-machine/
 
 base=https://github.com/docker/machine/releases/download/v0.16.0 &&
@@ -13,10 +13,13 @@ sudo install /tmp/docker-machine /usr/local/bin/docker-machine
 https://docs.docker.com/compose/install/
 
 ### Variables
-export FLASK_APP=project/__init__/py
-export FLASK_ENV=development
+```export FLASK_APP=project/__init__.py```
+
+```export FLASK_ENV=development```
 
 ### Run container
-change directory to testdriven-app
+1. Change directory to testdriven-app
+```
 $ docker-compose -f docker-compose-dev.yml build
-$ docker-compose -f docker-compose-dev.yml up -d
+$ docker-compose -f docker-compose-dev.yml up -d --build
+```
