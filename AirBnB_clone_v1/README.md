@@ -6,6 +6,27 @@ This version is the first portion of the Holberton AirBnB project, which is a pr
 In this version, the console is a command interpreter that creates and manages objects.
 
 
+## Container
+Build with image name *airbnb*:
+```
+$ docker build -tag=airbnb .
+```
+
+To run the airbnb console:
+```
+$ docker run -ti airbnb
+(hbnb) 
+```
+Note:
+Data is nonpersistent when running it this way
+
+Run the container with interactive shell
+```
+$ docker run -ti airbnb /bin/sh
+$ python3 console.py
+(hbnb)
+```
+
 ## Basic Usage
 * Create a new object (ex: a new User or a new Place)
 * Retrieve an object from a file, a database etc…
