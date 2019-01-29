@@ -41,7 +41,7 @@ $ curl 127.0.0.1:5001/users/ping
 
 ```docker rmi $(docker images -f "dangling=true" -q)```
 
-Some of these images can't be removed because they are being used by an exited container. I have to forcely remove those.
+Some of those images can't be removed because they were being used by a container (which were exited). I have to forcely remove those.
 
 ```docker rmi -f $(docker images -f "dangling=true" -q)```
 
