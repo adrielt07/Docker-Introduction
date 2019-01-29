@@ -7,6 +7,7 @@ In this version, the console is a command interpreter that creates and manages o
 
 
 ## Container
+Optional: Running the console in Docker container
 Build with image name *airbnb*:
 ```
 $ docker build -tag=airbnb .
